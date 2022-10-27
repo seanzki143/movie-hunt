@@ -1,0 +1,41 @@
+.movie-image {
+    height: 400px;
+    object-fit: cover;
+}
+
+.card {
+    border: none !important;
+    height: 100% !important;
+    border-radius: 0px !important;
+    transition: all ease-in-out 0.2s;
+    transition-delay: 0s;
+    position: relative;
+    .movie-image {
+        border-radius: 0px !important;
+        background: -webkit-gradient(linear, left top, left bottom, from(#ccc), to(#000));
+    }
+    .card-body {
+        padding: 10px;
+        background: linear-gradient(rgba(0, 0, 0, 0), black);
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        .card-title {
+            font-size: 22px;
+            margin-bottom: 2px;
+            color: white;
+        }
+        .card-text {
+            color: #8f8f8f;
+            font-size: 18px;
+        }
+    }
+    &:hover {
+        transform: scale(1.1);
+        z-index: 2;
+        transition-delay: 0.5s;
+    }
+}

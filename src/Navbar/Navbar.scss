@@ -1,0 +1,26 @@
+.navbar {
+    background: #040404;
+}
+
+.search-form {
+    border: 1px solid white;
+    .search-field{
+        background: none;
+        color: white;
+        outline: none;
+        border: none;
+        box-shadow: none;
+        &:focus {
+            color: white;
+            background: none;
+            box-shadow: none;
+        }
+    }
+    .search-btn {
+        background: none;
+        border: none;
+        svg {
+            fill: white;
+        }
+    }
+}

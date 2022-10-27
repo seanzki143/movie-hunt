@@ -1,6 +1,6 @@
 .App {
-  text-align: center;
-  background: #141414;
+  background: #040404;
+  min-height: 100vh;
 }
 
 .App-logo {
@@ -35,5 +35,25 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+.Movie-frame {
+  background: gray;
+  width: max-content;
+  text-align: left;
+  .Movie-info {
+    padding: 10px;
+    color: white;
+    .title {
+      font-weight: bold;
+      margin: 0px;
+    }
+    .year {
+      margin: 0px;
+    }
+    .type {
+      margin: 0px;
+    }
   }
 }
